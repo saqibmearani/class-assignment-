@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body onload="nextQuestion()">
+
+  <div class="container">
+    <h1>Quiz App</h1>
+
+    <p id="ques"></p>
+
+    <input value="1" onclick="clicked()" type="radio" class="options" name="options">
+    <label id="opt1"></label>
+
+    <br><br>
+
+    <input value="2" onclick="clicked()" type="radio" class="options" name="options">
+    <label id="opt2"></label>
+
+    <br><br>
+
+    <input value="3" onclick="clicked()" type="radio" class="options" name="options">
+    <label id="opt3"></label>
+
+    <br><br>
+
+    <button id="btn" disabled onclick="nextQuestion()">Next</button>
+  </div>
+
+  <script src="quiz.js"></script>
+
+</body>
+</html>
